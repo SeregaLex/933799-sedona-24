@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/24/user/933799).
-* Наставник: `Неизвестно`.
+* Студент: [Сергей Алексеев](https://up.htmlacademy.ru/htmlcss/24/user/933799).
+* Наставник: [Денис Быков] (https://htmlacademy.ru/profile/id66426).
 
 ---
 
