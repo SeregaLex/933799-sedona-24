@@ -2,70 +2,88 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Жильё в городе Седона</title>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="site-navigation">
-           <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-           <li><a href="media.html">ФОТО И ВИДЕО</a></li>
-           <li><a class="main-header-logo" href="mainpage"><img src="img/index-logo.svg" width="" height="" alt="Логотип города Седона"></a></li>
-             <!-- также как и на главной-->
-           <li><a href="map-state.html">КАРТА ШТАТА</a></li>
-           <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+           <li><a href="info.html">Информация</a></li>
+           <li><a href="media.html">Фото и Видео</a></li>
+           <li><a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="" height="" alt="Логотип города Седона"></a></li>
+           <li><a href="map-state.html">Карта штата</a></li>
+           <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <!-- С заголовками непросто, можно только мысленно их обозначить и скрыть, мне так кажется -->
     <main class="container">
-       <h1 class="visually hidden">Поиск жилья</h1>
-        <section class="search-options">
-            <!-- кажется что это одна секция с поиском жилья по заданным параметрам, только пока её не надо размечать -->
-          <h2 class="visually-hidden">Поиск по параметрам</h2>
-            <!-- Заголовок такой только приходит, который скрываем с помощью класса -->
-        </section> 
-        <section class="housing">
-          <h2 class="visually-hidden">Результаты поиска</h2>
-          <img src="imgAmaraSpa.svg" width="" height="">
-          <p>AMARA RESORT & SPA</p>
-          <p>ГОСТИНИЦА 4000 Р.</p>
-            <!-- как сделать отступ для от 4000Р -->
-          <a class="button" href="descriptionspa.html">ПОДРОБНЕЕ</a>
-             <!-- по идеи это ссылка - открывается подробное описание отеля -->
-          <button type="submit button">Забронировать</button>
-          <p><img src="4stars.svg"></p>
-          <p>РЕЙТИНГ: 8,5</p>
-          <hr color="lightgray" size="1">
-          <img src="Desertqualinn.svg" width="" height="">
-          <p>DESERT QUAIL INN</p>
-          <p>МОТЕЛЬ ОТ 3000 Р.</p>
-          <a class="button" href="descriptionmotel.html">ПОДРОБНЕЕ</a>
-          <button type="submit button">ЗАБРОНИРОВАТЬ</button>
-          <p><img src="3stars.svg"></p>
-          <p>РЕЙТИНГ: 8,9</p>
-          <hr color="lightgray" size="1">
-          <img src="Villasatpoco.svg" width="" height="">
-          <p>VILLAS AT POCO DIABLO</p>
-          <p>АППАРТАМЕНТЫ ОТ 2000 Р.</p>
-          <a class="button" href="descriptionappart.html">ПОДРОБНЕЕ</a>
-          <button type="submit button">ЗАБРОНИРОВАТЬ</button>
-          <p><img src="2stars.svg"></p>
-          <p>РЕЙТИНГ: 9,2</p>
-          <hr color="lightgray" size="1">
+        <h1 class="visually hidden">Поиск жилья</h1>
+          <!-- место для формы -->
+          
+        <section class="catalog">
+          <h2 class="visually-hidden">Список доступного жилья</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h3>Amara resort & spa</h3>
+              <span class="catalog-category">Гостиница от 4000 р.</span>
+                <a href="catalog-item.html">
+                  <img src="img/product-1.jpg" width="" height="" alt="Amara resort & spa">
+                </a>
+                  <!--Клик по фотографии товара открывает полноразмерное фото -->
+              <div class="block-1">
+                <a class="button" href="catalog-item-info.html">Подробнее</a>
+                  <!--при нажатии по идее открывается подробная информация о отеле-->
+                <a class="button" href="#">Забронировать</a>
+                  <!--Кнопка забронировать добавляет товар в корзину -->
+              </div>
+               <!--рейтинг звёздочки кажутся декоративным элементом, значит сейчас их не отмечаем -->
+               <b class="item-rating">8,5</b>
+            </li>
+            <hr color="lightgray" size="1">
+
+            <li class="catalog-item">
+              <h3>Desert quail inn</h3>
+              <span class="catalog-category">Мотель от 3000 р.</span>
+                <a href="catalog-item.html">
+                  <img src="img/product-2.jpg" width="" height="" alt="Desert quail inn">
+                </a>
+              <div class="block-1">
+                <a class="button" href="catalog-item-info.html">Подробнее</a>
+                <a class="button" href="#">Забронировать</a>
+              </div>
+               <b class="item-rating">8,9</b>
+            </li>
+            <hr color="lightgray" size="1">
+
+            <li class="catalog-item">
+              <h3>Villas at poco diablo</h3>
+              <span class="catalog-category">Аппартаменты от 2000 р.</span>
+                <a href="catalog-item.html">
+                  <img src="img/product-3.jpg" width="" height="" alt="Villas at poco diablo">
+                </a>
+              <div class="block-1">
+                <a class="button" href="catalog-item-info.html">Подробнее</a>
+                <a class="button" href="#">Забронировать</a>
+              </div>
+               <b class="item-rating">9,2</b>
+            </li>
+            <hr color="lightgray" size="1">     
+          </ul>
         </section>
+
     </main>
     <footer class="main-footer">
-            <p class="#visitsedona">#VISITSEDONA</p>
-              <!--по идеи это просто хештег, должен ли он куда-то вести? -->
-              <ul>
-                <a class="social-button" href="#">Твиттер</a>
-                <a class="social-button" href="#">Фейсбук</a>
-                <a class="social-button" href="#">Ютуб</a>
-              </ul>
-            <p class="footer-copyright">
-              <a href="https://htmlacademy.ru"><img src="htmlacademy.svg"></a>
-            </p>
-            </footer>
-          </body>
-        </html>
+      <span class="#visitsedona">#VISITSEDONA</span>
+      <ul>
+        <a class="social-button" href="#">Твиттер</a>
+        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">Ютуб</a>
+      </ul>
+      <p class="footer-copyright">
+        <a href="https://htmlacademy.ru"><img src="htmlacademy.svg"></a>
+      </p>
+    </footer>
+   </body>
+</html>
+
+        
