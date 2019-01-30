@@ -29,17 +29,17 @@
                 <a href="catalog-item.html">
                   <img src="img/product-1.jpg" width="" height="" alt="Amara resort & spa">
                 </a>
-                  <!--Клик по фотографии товара открывает полноразмерное фото -->
               <div class="block-1">
                 <a class="button" href="catalog-item-info.html">Подробнее</a>
-                  <!--при нажатии по идее открывается подробная информация о отеле-->
                 <a class="button" href="#">Забронировать</a>
-                  <!--Кнопка забронировать добавляет товар в корзину -->
+                  <!--Тут правильно использовать ссылку или кнока нужна? -->
               </div>
-               <!--рейтинг звёздочки кажутся декоративным элементом, значит сейчас их не отмечаем -->
+              <p class="rating">
+               <img src="4stars.jpg" alt="4 звезды">
                <b class="item-rating">8,5</b>
+              </p>
+                <!-- лучше использовать div вместо р если нету блока текста? -->
             </li>
-            <hr color="lightgray" size="1">
 
             <li class="catalog-item">
               <h3>Desert quail inn</h3>
@@ -51,9 +51,11 @@
                 <a class="button" href="catalog-item-info.html">Подробнее</a>
                 <a class="button" href="#">Забронировать</a>
               </div>
-               <b class="item-rating">8,9</b>
+              <p class="rating">
+                <img src="3stars.jpg" alt="3 звезды">
+                <b class="item-rating">8,9</b>
+              </p>
             </li>
-            <hr color="lightgray" size="1">
 
             <li class="catalog-item">
               <h3>Villas at poco diablo</h3>
@@ -65,9 +67,11 @@
                 <a class="button" href="catalog-item-info.html">Подробнее</a>
                 <a class="button" href="#">Забронировать</a>
               </div>
-               <b class="item-rating">9,2</b>
-            </li>
-            <hr color="lightgray" size="1">     
+              <p class="rating">
+                <img src="2stars.jpg" alt="2 звезды">
+                <b class="item-rating">9,2</b>
+              </p>
+            </li>   
           </ul>
         </section>
 
