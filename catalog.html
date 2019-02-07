@@ -7,10 +7,10 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html"><img src="img/index-logo.png" width="" height="" alt="Логотип города Седона"></a>
         <ul class="site-navigation">
            <li><a href="info.html">Информация</a></li>
            <li><a href="media.html">Фото и Видео</a></li>
-           <li><a class="main-header-logo" href="index.html"><img src="img/index-logo.png" width="" height="" alt="Логотип города Седона"></a></li>
            <li><a href="map-state.html">Карта штата</a></li>
            <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
@@ -27,29 +27,26 @@
       <section class="catalog">
           <h2 class="visually-hidden">Список доступного жилья</h2>
           <ul class="catalog-list">
-          <!--элементы списка вышли громоздкими и можно ли вообще всё это заворачивать в тег li?-->
             <li class="catalog-item">
               <h3>Amara resort & spa</h3>
               <a href="catalog-item.html">
-                <img src="img/product-1.jpg" width="" height="" alt="Amara resort & spa">
+                <img src="http://placehold.it/100x50" width="" height="" alt="Amara resort & spa">
               </a>
               <span class="catalog-category">Гостиница от 4000 р.</span>
               <div class="block-1">
                 <a class="button" href="catalog-item-info.html">Подробнее</a>
                 <a class="button" href="#">Забронировать</a>
-                  <!--Тут правильно использовать ссылку или кнока нужна? -->
               </div>
               <p class="rating">
-               <img src="4stars.jpg" alt="4 звезды">
-               <b class="item-rating">8,5</b>
+                <span class="stars">4</span>
+                <img src="http://placehold.it/80x20" alt="рейтинг: 8,5">
               </p>
-                <!-- лучше использовать div вместо р если нету блока текста? -->
             </li>
 
             <li class="catalog-item">
               <h3>Desert quail inn</h3>
               <a href="catalog-item.html">
-                <img src="img/product-2.jpg" width="" height="" alt="Desert quail inn">
+                <img src="http://placehold.it/100x50" width="" height="" alt="Desert quail inn">
               </a>
               <span class="catalog-category">Мотель от 3000 р.</span>
               <div class="block-1">
@@ -57,15 +54,15 @@
                 <a class="button" href="#">Забронировать</a>
               </div>
               <p class="rating">
-                <img src="3stars.jpg" alt="3 звезды">
-                <b class="item-rating">8,9</b>
+                <span class="stars">3</span>
+                <img src="http://placehold.it/80x20" alt="рейтинг: 8,9">
               </p>
             </li>
 
             <li class="catalog-item">
               <h3>Villas at poco diablo</h3>
               <a href="catalog-item.html">
-                <img src="img/product-3.jpg" width="" height="" alt="Villas at poco diablo">
+                <img src="http://placehold.it/100x50" width="" height="" alt="Villas at poco diablo">
               </a>
               <span class="catalog-category">Аппартаменты от 2000 р.</span>
               <div class="block-1">
@@ -73,8 +70,8 @@
                 <a class="button" href="#">Забронировать</a>
               </div>
               <p class="rating">
-                <img src="2stars.jpg" alt="2 звезды">
-                <b class="item-rating">9,2</b>
+                  <span class="stars">2</span>
+                <img src="http://placehold.it/80x20" alt="рейтинг: 9,2">
               </p>
             </li>   
           </ul>
@@ -86,14 +83,14 @@
 
     <div class="footer-social">
       <ul>
-        <a class="social-button" href="#">Твиттер</a>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Ютуб</a>
+        <a class="social-button" target="_blank" href="#">Твиттер</a>
+        <a class="social-button" target="_blank" href="#">Фейсбук</a>
+        <a class="social-button" target="_blank" href="#">Ютуб</a>
       </ul>
     </div>
 
       <p class="footer-copyright">
-        <a href="https://htmlacademy.ru"><img src="htmlacademy.svg"></a>
+        <a href="https://htmlacademy.ru" target="_blank"><img src="htmlacademy.svg"></a>
       </p>
     </footer>
    </body>

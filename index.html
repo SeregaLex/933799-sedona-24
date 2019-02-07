@@ -7,10 +7,10 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <img src="img/index-logo.png" width="" height="" alt="Логотип города Седона">
         <ul class="site-navigation">
            <li><a href="info.html">Информация</a></li>
            <li><a href="media.html">Фото и видео</a></li>
-           <li><img src="img/index-logo.png" width="" height="" alt="Логотип города Седона"></li>
            <li><a href="map-state.html">Карта штата</a></li>
            <li><a href="hotels.html">Гостиница</li>
         </ul>
@@ -18,18 +18,10 @@
     </header>
 
     <main class="container">
-        <div class="welcome"></div>
-          <!-- положим всё что касается фона Седоны и надписей на нём - внутрь одного контейнера -->
-          <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-          <img src="#" width="" height="" alt="Фото каньона Седона">
-          <ul class="welcome-list">
-            <!-- каждая фраза стилизована по своему, возможно что-то является изображением, а не текстом -->
-            <li class="welcome-item-1">Welcome<li>
-            <li class="welcome-item-2">-to the gorgeous-<li>
-            <li class="welcome-item-3">Sedona<li>
-            <li class="welcome-item-4">"Because the Grand Canyon sucks!"<li>
-          </ul>
-        </div>
+      <div class="welcome"></div>
+        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+        <img src="http://placehold.it/500x150" width="" height="" alt="Фото каньона Седона">
+      </div>
 
       <section class="features">
         <b class="features-lead">Седона, небольшой городок в аризоне, заслуживающий большего!</b>
@@ -38,8 +30,7 @@
       </section>
 
       <p>
-        <b class="booking-lead">Заинтересовались?</b><br>
-        <!-- Вопрос: делать переносы посредствоим html или потом в css с пмощью display или др? -->
+        <b class="booking-lead">Заинтересовались?</b>
         <span class="booking-text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</span>
       </p>
@@ -47,22 +38,22 @@
       <section class="bookingform">
         <h2 class="bookingform-title">Поиск гостиницы в Седоне</h2>
         <form  action="#" metod="get">
-
-        <lable for="datearrive">Дата заезда:</lable>
-        <input name="datearrive" id="datearrive" type="text" value="24 Апреля 2017"><br> 
-        <!-- Какой iput использовать текст или date - по идее есть спец атрибут - date, но и текстом тоже можно -->
-        <!-- 24 Апреля 2017 что это значение элемента и тег value или подсказывающий текст и тег placeholder-->
-
-        <lable for="datedeparture">Дата выезда:</lable>
-        <input name="datedeparture" id="datedeparture" type="text" value="24 Апреля 2017"><br> 
-
-        <label for="adult">Взрослые:</label>
-        <input name="adult" id="datedeparture" type="text" value="2">
-        <!-- уменьшать\увеличивать количество, это потом с помощью javascipt будем делать? -->
-
-        <label for="children">Дети:</label>
-        <input name="children" id="datedeparture" type="text" value="0"><br>
-
+        <p>
+          <lable for="datearrive">Дата заезда:</lable>
+          <input name="datearrive" id="datearrive" type="text" value="24 Апреля 2017">
+        </p>
+        <p>
+          <lable for="datedeparture">Дата выезда:</lable>
+          <input name="datedeparture" id="datedeparture" type="text" value="24 Апреля 2017"><br> 
+        </p>
+        <p>
+          <label for="adult">Взрослые:</label>
+          <input name="adult" id="datedeparture" type="text" value="2">
+        </p>
+        <p>
+          <label for="children">Дети:</label>
+          <input name="children" id="datedeparture" type="text" value="0"><br>
+        </p>
         <button class="booking-button-search" type="submit">Найти</button>
         </form>      
       </section>
@@ -70,18 +61,17 @@
 
     <footer class="main-footer">
     <span class="#visitsedona">#VISITSEDONA</span>
-      <!--по идеи это просто хештег, должен ли он куда-то вести? -->
       
     <div class="footer-social">
       <ul>
-        <a class="social-button" href="#">Твиттер</a>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Ютуб</a>
+        <a class="social-button" target="_blank" href="#">Твиттер</a>
+        <a class="social-button" target="_blank" href="#">Фейсбук</a>
+        <a class="social-button" target="_blank" href="#">Ютуб</a>
       </ul>
     </div>
 
     <p class="footer-copyright">
-      <a href="https://htmlacademy.ru"><img src="htmlacademy.svg"></a>
+      <a href="https://htmlacademy.ru" target="_blank"><img src="htmlacademy.svg"></a>
     </p>
     </footer>
   </body>
