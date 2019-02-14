@@ -3,11 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Жильё в городе Седона</title>
+    <style>
+      body {
+        /* background-image: url(img/backgroundphoto.jpg); */
+        width: 1200px;
+        height: 800px;
+        background-repeat: no-repeat;
+      }
+    </style>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <img src="img/index-logo.png" width="" height="" alt="Логотип города Седона">
+        <img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
         <ul class="site-navigation">
            <li><a href="info.html">Информация</a></li>
            <li><a href="media.html">Фото и видео</a></li>
@@ -20,23 +28,35 @@
     <main class="container">
       <div class="welcome"></div>
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img src="http://placehold.it/500x150" width="" height="" alt="Фото каньона Седона">
+        <img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona>
       </div>
 
       <section class="features">
         <b class="features-lead">Седона, небольшой городок в аризоне, заслуживающий большего!</b>
         <h2 class="features-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-        <!--преимущества с картинками -->
+          <ol class="features-items">
+            <li>Настоящий городок</li>
+            <li>Мост дьявола</li>
+            <li>Небольшая площадь</li>
+            <li>Красивая дорога</li>
+            <li>Мало туристов</li>
+              <ol class="features-more">
+                <li>Жильё</li>
+                <li>Еда</li>
+                <li>Сувениры</li>
+              </ol>
+          </ol>
       </section>
 
       <p>
         <b class="booking-lead">Заинтересовались?</b>
-        <span class="booking-text">Укажите предполагаемые даты поездки,<br>
+        <span class="booking-text">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне</span>
       </p>
 
       <section class="bookingform">
         <h2 class="bookingform-title">Поиск гостиницы в Седоне</h2>
+        <!-- <img src="img/map.png" width="1718" height="748" alt="Седона на карте">  -->
         <form  action="#" metod="get">
         <p>
           <lable for="datearrive">Дата заезда:</lable>
@@ -48,14 +68,18 @@
         </p>
         <p>
           <label for="adult">Взрослые:</label>
+          <span class="minus">-</span>
           <input name="adult" id="datedeparture" type="text" value="2">
+          <span class="plus">+</span>
         </p>
         <p>
           <label for="children">Дети:</label>
+          <span class="minus">-</span>
           <input name="children" id="datedeparture" type="text" value="0"><br>
+          <span class="plus">+</span>
         </p>
         <button class="booking-button-search" type="submit">Найти</button>
-        </form>      
+        </form>   
       </section>
     </main>
 
@@ -64,15 +88,16 @@
       
     <div class="footer-social">
       <ul>
-        <a class="social-button" target="_blank" href="#">Твиттер</a>
-        <a class="social-button" target="_blank" href="#">Фейсбук</a>
-        <a class="social-button" target="_blank" href="#">Ютуб</a>
+        <a class="social-button" target="_blank" href="#"><img src="img/t.svg" alt="Твиттер"></a>
+        <a class="social-button" target="_blank" href="#"><img src="img/fb.svg" alt="Фейсбук"></a>
+        <a class="social-button" target="_blank" href="#"><img src="img/youtube.svg" alt="Ютуб"></a>
       </ul>
     </div>
 
     <p class="footer-copyright">
-      <a href="https://htmlacademy.ru" target="_blank"><img src="htmlacademy.svg"></a>
+      <span class="webciteby">Webcite by</span>
+      <a href="https://htmlacademy.ru" target="_blank"><img src="img/logohtmlacademy.png" width="115" height="41"></a>
+    </div>
     </p>
-    </footer>
   </body>
 </html>
