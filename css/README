@@ -1,9 +1,7 @@
-Папка для стилевых файлов.
-
---
-
-Пример структуры файлов:
-
-css/
-| - style.css
-| - [другие *.css файлы]
+.body::after {
+  width: 1200px;
+  height: 216px;
+  content: "";
+  background: url(img/polygon.svg) no-repeat center center;
+  
+}

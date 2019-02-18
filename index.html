@@ -3,19 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Жильё в городе Седона</title>
-    <style>
-      body {
-        /* background-image: url(img/backgroundphoto.jpg); */
-        width: 1200px;
-        height: 800px;
-        background-repeat: no-repeat;
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
+        <img class="logoSedona" src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
         <ul class="site-navigation">
            <li><a href="info.html">Информация</a></li>
            <li><a href="media.html">Фото и видео</a></li>
@@ -28,27 +24,27 @@
     <main class="container">
       <div class="welcome"></div>
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona>
+        <img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
       </div>
 
       <section class="features">
         <b class="features-lead">Седона, небольшой городок в аризоне, заслуживающий большего!</b>
         <h2 class="features-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-          <ol class="features-items">
-            <li>Настоящий городок</li>
-            <li>Мост дьявола</li>
-            <li>Небольшая площадь</li>
-            <li>Красивая дорога</li>
-            <li>Мало туристов</li>
-              <ol class="features-more">
-                <li>Жильё</li>
-                <li>Еда</li>
-                <li>Сувениры</li>
-              </ol>
-          </ol>
+          <!-- <ul class="features-items"> -->
+            <!-- <li>Настоящий городок</li> -->
+            <!-- <li>Мост дьявола</li> -->
+            <!-- <li>Небольшая площадь</li> -->
+            <!-- <li>Красивая дорога</li> -->
+            <!-- <li>Мало туристов</li> -->
+              <!-- <ul class="features-more"> -->
+                <!-- <li>Жильё</li> -->
+                <!-- <li>Еда</li> -->
+                <!-- <li>Сувениры</li> -->
+              </ul>
+          </ul>
       </section>
 
-      <p>
+      <p class="booking">
         <b class="booking-lead">Заинтересовались?</b>
         <span class="booking-text">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне</span>

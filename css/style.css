@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url(img/backgroundphoto.jpg);
+  width: 1200px;
+  height: 800px;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.site-navigation .site-navigation-current{
+  color: #766357;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.welcome {
+  margin-top: 61px;
+  margin-left: 371px;
+}
+
+.features-lead {
+  display: block;
+  width: 636px;
+  font-size: 21px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  word-wrap: break-word;
+  margin-top: 65px;
+  margin-bottom: 30px;
+  margin-left: 282px;
+}
+
+.features-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  margin-left: 354px;
+  margin-bottom: 57px;
+}
+
+.booking-lead {
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking-text{
+  display: block;
+  width: 500;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+
+
+/* body::before { */
+  width: 1200px;
+  height: 216px;
+  content: "";
+  background: url(img/polygon.svg) no-repeat 0px 800px;
+  display: block;
+}
+
+
+
+
+}
