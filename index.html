@@ -11,7 +11,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <img class="logoSedona" src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
+        <img class="logoSedona" src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         <ul class="site-navigation">
            <li><a href="info.html">Информация</a></li>
            <li><a href="media.html">Фото и видео</a></li>
@@ -24,11 +24,11 @@
     <main class="container">
       <div class="welcome"></div>
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
+        <img class="welcometosedona"src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
       </div>
 
       <section class="features">
-        <b class="features-lead">Седона, небольшой городок в аризоне, заслуживающий большего!</b>
+        <b class="features-lead">Седона - небольшой городок в аризоне, заслуживающий большего!</b>
         <h2 class="features-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
           <!-- <ul class="features-items"> -->
             <!-- <li>Настоящий городок</li> -->
@@ -51,49 +51,50 @@
       </p>
 
       <section class="bookingform">
-        <h2 class="bookingform-title">Поиск гостиницы в Седоне</h2>
-        <!-- <img src="img/map.png" width="1718" height="748" alt="Седона на карте">  -->
+        <button class="searchinsedona-button">Поиск гостиницы в Седоне</button>
         <form  action="#" metod="get">
-        <p>
+        <p class="booking-item">
           <lable for="datearrive">Дата заезда:</lable>
           <input name="datearrive" id="datearrive" type="text" value="24 Апреля 2017">
         </p>
-        <p>
+        <p class="booking-item">
           <lable for="datedeparture">Дата выезда:</lable>
-          <input name="datedeparture" id="datedeparture" type="text" value="24 Апреля 2017"><br> 
+          <input name="datedeparture" id="datedeparture" type="text" value="24 Апреля 2017">
         </p>
-        <p>
+        <p class="booking-item">
           <label for="adult">Взрослые:</label>
           <span class="minus">-</span>
           <input name="adult" id="datedeparture" type="text" value="2">
           <span class="plus">+</span>
         </p>
-        <p>
+        <p class="booking-item">
           <label for="children">Дети:</label>
           <span class="minus">-</span>
-          <input name="children" id="datedeparture" type="text" value="0"><br>
+          <input name="children" id="datedeparture" type="text" value="0">
           <span class="plus">+</span>
         </p>
-        <button class="booking-button-search" type="submit">Найти</button>
+        <button class="scan-button" type="submit">Найти</button>
         </form>   
       </section>
+      <img src="img/map.png" width="1718" height="748" alt="Седона на карте"> 
     </main>
 
     <footer class="main-footer">
-    <span class="#visitsedona">#VISITSEDONA</span>
+    <span class="visitsedona">#VISITSEDONA</span>
       
     <div class="footer-social">
       <ul>
-        <a class="social-button" target="_blank" href="#"><img src="img/t.svg" alt="Твиттер"></a>
-        <a class="social-button" target="_blank" href="#"><img src="img/fb.svg" alt="Фейсбук"></a>
-        <a class="social-button" target="_blank" href="#"><img src="img/youtube.svg" alt="Ютуб"></a>
+        <li><a class="social-button twitter" target="_blank" href="#"><img src="img/icon-twitter.png" alt="Твиттер"></a></li>
+        <li><a class="social-button facebook" target="_blank" href="#"><img src="img/icon-facebook.png" alt="Фейсбук"></a></li>
+        <li><a class="social-button youtube" target="_blank" href="#"><img src="img/icon-youtube.png" alt="Ютуб"></a></li>
       </ul>
     </div>
 
     <p class="footer-copyright">
       <span class="webciteby">Webcite by</span>
-      <a href="https://htmlacademy.ru" target="_blank"><img src="img/logohtmlacademy.png" width="115" height="41"></a>
+      <a class="button" href="https://htmlacademy.ru" target="_blank"></a>
     </div>
     </p>
   </body>
 </html>
+

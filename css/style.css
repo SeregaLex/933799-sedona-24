@@ -9,7 +9,7 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url(img/backgroundphoto.jpg);
+  background-image: url(../img/backgroundphoto.jpg);
   width: 1200px;
   height: 800px;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@ a {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.site-navigation .site-navigation-current{
+.site-navigation .site-navigation-current {
   color: #766357;
 }
 
@@ -49,14 +49,18 @@ a {
   display: none;
 }
 
-.welcome {
-  margin-top: 61px;
-  margin-left: 371px;
+.welcometosedona {
+  margin: 61px 370px ;
+}
+
+.welcome::after {
+  content: "";
+  border-image: url(../img/background-polygon.svg);
 }
 
 .features-lead {
   display: block;
-  width: 636px;
+  width: 600px;
   font-size: 21px;
   color: #000000;
   background-color: #ffffff;
@@ -88,25 +92,232 @@ a {
 
 .booking-text{
   display: block;
-  width: 500;
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
   text-align: center;
-  word-wrap: break-word;
+  margin-bottom: 50px;
 }
 
+.searchinsedona-button {
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
 
-
-/* body::before { */
-  width: 1200px;
-  height: 216px;
-  content: "";
-  background: url(img/polygon.svg) no-repeat 0px 800px;
-  display: block;
+  background-color: #766357;
+  border: none;
 }
 
+.sedonahotels-button:hover,
+.sedonahotels-button:focus {
+  background-color: #604e43;
+}
 
+.sedonahotels-button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3)
+}
 
+.scan-button {
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+}
 
+.scan-button:hover,
+.scan-button:focus {
+  background-color: #669ec0;
+}
+
+.scan-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.label {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.booking-item input {
+  font: inherit;
+  background-color: #f2f2f2;
+}
+
+.booking-item input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-item input:focus {
+  background-color: #ffffff;
+}
+
+.plus,
+.minus {
+  color: #a9a9a9
+}
+
+.plus:hover,
+.minus:hover {
+  color: #000000;
+}
+
+.plus:active,
+.minus:active{ 
+  color: #81b3d2;
+}
+
+.main-footer {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url("img/main-footer.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.visitsedona {
+  font-size: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+.footer-social li {
+  display: inline;
+}
+
+.social-button {
+  background-color: #81b3d2;
+  margin-left: 6px;
+  padding: 18px;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0
+}
+
+.social-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright .button {
+  background-image: url(../img/logo-htmlacademy-current.svg);
+} 
+ 
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  background-image: url(../img/logo-htmlacademy-hove.svg);
+}
+
+.footer-copyright .button:active {
+  background-image: url(../img/logo-htmlacademy-active.svg);
+}
+
+.catalog-page {
+  background-color: #fefefe;
+  background-image: none;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-category {
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff; 
+}
+
+a.hotels {
+  font-size: 21px;
+  color: #000000;
+  background-color: #ffffff; 
+}
+
+a.hotels:hover,
+a.hotels:focus {
+  color: #81b3d2;
+}
+
+a.hotels:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.info-button {
+  width: 110px;
+  height: 27px;
+  font-size:14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+}
+
+.info-button:hover,
+.info-button:focus {
+  background-color: #669ec0;
+}
+
+.info-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.book-button {
+  width: 110px;
+  height: 27px;
+  font-size:14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #766357;
+}
+
+.book-button:hover,
+.book-button:focus {
+  background-color: #604e43;
+}
+
+  .book-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+  }    
+
+.rate {
+  background-color: #f2f2f2;
+}
+
+.catalog-item {
+  border-top: 1px solid lightgrey;
+}
+
+.catalog-item-villasatpocodiablo {
+  border-bottom: 1px solid lightgrey;
 }
